@@ -1,0 +1,27 @@
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.card {
+  margin-top: 40px;
+  margin-right: 350px;
+  margin-left: 350px;
+  margin-bottom: 40px;
+
+  padding: 30px;
+  border: 1px solid blue;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: rgb(24, 67, 67);
+}

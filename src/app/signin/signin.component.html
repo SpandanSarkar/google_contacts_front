@@ -1,0 +1,33 @@
+<form [formGroup]="signInForm">
+  <div class="card">
+    <p class="text-center text-primary">Register</p>
+    <div class="d-flex align-items-center justify-content-center">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter Email</mat-label>
+        <input
+          formControlName="email"
+          matInput
+          placeholder="Enter Your Email"
+        />
+      </mat-form-field>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter Password</mat-label>
+        <input
+          formControlName="password"
+          matInput
+          placeholder="Enter Your Password"
+        />
+      </mat-form-field>
+    </div>
+    <div mat-dialog-action [align]="'center'">
+      <button mat-raised-button color="warn" mat-dialog-close>close</button
+      >&nbsp;&nbsp;
+      <button mat-raised-button color="primary" (click)="submitForm()">
+        Register
+      </button>
+    </div>
+  </div>
+</form>

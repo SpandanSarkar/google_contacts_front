@@ -1,0 +1,103 @@
+<form [formGroup]="contactForm">
+  <div class="card">
+    <p class="text-center text-primary">Contact</p>
+    <div class="d-flex align-items-center justify-content-center">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter First Name</mat-label>
+        <input
+          formControlName="firstName"
+          matInput
+          placeholder="Enter Your firstName"
+        />
+      </mat-form-field>
+    </div>
+    <!-- last name  -->
+    <div class="d-flex align-items-center justify-content-center">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter Last Name</mat-label>
+        <input
+          formControlName="lastName"
+          matInput
+          placeholder="Enter Your lastName"
+        />
+      </mat-form-field>
+    </div>
+    <!-- last name  -->
+
+    <!-- company  -->
+    <div class="d-flex align-items-center justify-content-center">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter Company Name</mat-label>
+        <input
+          formControlName="company"
+          matInput
+          placeholder="Enter Your Company"
+        />
+      </mat-form-field>
+    </div>
+    <!-- company end -->
+
+    <!-- job title  -->
+    <div class="d-flex align-items-center justify-content-center">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter Job Title</mat-label>
+        <input
+          formControlName="job"
+          matInput
+          placeholder="Enter Job Title"
+        />
+      </mat-form-field>
+    </div>
+    <!-- job title end -->
+
+
+    <!-- email  -->
+
+    <div class="d-flex align-items-center justify-content-center">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter Email</mat-label>
+        <input
+          formControlName="email"
+          matInput
+          placeholder="Enter Your Email"
+        />
+      </mat-form-field>
+    </div>
+    <!-- email end -->
+
+    <!-- phone  -->
+    <div class="d-flex align-items-center justify-content-center">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter Phone Number</mat-label>
+        <input
+          formControlName="phone"
+          matInput
+          placeholder="Enter Your Phone Number"
+        />
+      </mat-form-field>
+    </div>
+    <!-- phone  -->
+
+    <!-- notes  -->
+    <div class="d-flex align-items-center justify-content-center">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Enter Note</mat-label>
+        <input
+          formControlName="note"
+          matInput
+          placeholder="Enter Your Note"
+        />
+      </mat-form-field>
+    </div>
+    <!-- notes  -->
+    <br>
+    <div class="d-flex align-items-center justify-content-center">
+      <div mat-dialog-action [align]="'center'">
+        <button mat-raised-button color="primary" (click)="submitContact()">
+          Add New
+        </button>
+      </div>
+    </div>
+
+  </div>
+</form>

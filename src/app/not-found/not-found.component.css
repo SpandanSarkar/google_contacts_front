@@ -1,0 +1,15 @@
+.container {
+  margin: 20px;
+}
+
+d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
